@@ -1,7 +1,14 @@
 html {
   font-family: 'Roboto Condensed', sans-serif;
-  color: white;
-  background-image: url("cool-background.png")
+  background-image: url("4.jpg");
+  background-size: cover;
+}
+
+.bg-image{
+  background-image: url("4.jpg");
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 #mainBlock {
@@ -9,22 +16,32 @@ html {
   float: center;
   align: center;
   padding: 30px;
-  color: white;
+  color: grey;
   /* background-color: rgb(255,192,203); */
 }
 
 
 h1 {
-  padding-left: 20px;
+  padding-left: 33%;
+  background-color: white;
+  width: 50%;
 }
 
+h3 {
+  float:center;
+  align: center;
+  background-color: white;
+  width: 50%;
+}
 
-.event{
-  border: 3px solid white;
+.event1{
+  border: 3px solid black;
   border-radius: 10px;
   padding-left: 30px;
 }
 
-.img1 {
-  padding-left: 800px;
+.event2{
+  border: 3px solid black;
+  border-radius: 10px;
+  padding-left: 30px;
 }
