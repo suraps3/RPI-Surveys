@@ -1,0 +1,53 @@
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style/forum.css">
+</head>
+
+<body style="background-color: red;">
+	<div id = "mainBlock">
+
+		<div id="top_part", style="background-color: white">
+			<h1 id="forum_title" style="color: black;">Forums</h1>
+			<div class="search-container">
+				<input type="text" placeholder="Search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
+			
+		</div>
+
+		<div class="post">
+			<h2>Mike Wazowski</h2>
+			<p>Hours Volunteered: 25</p>
+			<p>More info: he's green</p>
+		</div>
+		<div class="post">
+			<h2>Flynn Rider</h2>
+			<p>Hours Volunteered: 0</p>
+			<p>More info: he's a criminal</p>
+		</div>
+	</div>
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+
+	<script>
+	  // Your web app's Firebase configuration
+	  var firebaseConfig = {
+	    apiKey: "AIzaSyCcIugB6OjK0hSdnFVpvC1qth8aa7RjdMg",
+	    authDomain: "rpisurveys-38489.firebaseapp.com",
+	    databaseURL: "https://rpisurveys-38489.firebaseio.com",
+	    projectId: "rpisurveys-38489",
+	    storageBucket: "rpisurveys-38489.appspot.com",
+	    messagingSenderId: "959359841254",
+	    appId: "1:959359841254:web:af8d57cd7dbeebf5119c27",
+	    measurementId: "G-PP1SJQ1PWD"
+	  };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	</script>
+</body>
