@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}{{user}} homepage{% endblock %}
+
+{% block stylesheet %}<link rel="stylesheet" href="/style/user.css">{% endblock %}
+
+{% block body %}
+<div id = "mainBlock">
+
+<h1>User Page</h1>
+
+<div class="user">
+  <h2>{{user}}'s page</h2>
+  <p>More about you here</p>
+</div>
+</br>
+<button><a href="/logout">Logout</a></button>
+</div>
+
+{% endblock %}
