@@ -6,32 +6,88 @@ html {
 
 .bg-image{
   background-image: url("4.jpg");
-  background-size: cover;
   filter: blur(8px);
   -webkit-filter: blur(8px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#mainBlock {
-  width: 90%;
-  float: center;
-  align: center;
+.mainBlock {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
   padding: 30px;
-  color: grey;
-  /* background-color: rgb(255,192,203); */
+  color: white;
+  background-color: red;
+  font-size: 50px;
 }
 
 
 h1 {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  /*
   padding-left: 33%;
   background-color: white;
-  width: 50%;
+  width: 50%;8
+  */
+}
+
+h2 {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
 }
 
 h3 {
-  float:center;
-  align: center;
-  background-color: white;
-  width: 50%;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
 }
 
 .event1{
@@ -41,7 +97,5 @@ h3 {
 }
 
 .event2{
-  border: 3px solid black;
-  border-radius: 10px;
   padding-left: 30px;
 }
