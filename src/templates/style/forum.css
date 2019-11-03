@@ -1,10 +1,165 @@
 html {
   font-family: 'Roboto Condensed', sans-serif;
-  background-image: url("4.jpg");
+  background-image: url("back4.jpg");
   background-size: cover;
 }
 
-.nav_bar {
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+
+h1 {
+  font-size: 35px;
+  color: black;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #FFCCCB;
+}
+
+p {
+  font-size: 20px;
+  color: gray;
+}
+
+.left {
+ float: left;
+ padding: 0 10px 0 0;
+ align: left;
+}
+
+.dropdown-content a:hover {background-color: gray}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  border-radius: : 5px;
+  border: solid purple;
+  padding: 30px 30px 30px 30px;
+}
+
+/**
+ * Footer Styles
+ */
+
+
+
+p {
+  font-family: "Courier New", Courier, monospace
+}
+
+
+#searchpart {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid black;
+  position: absolute;
+  vertical-align: middle;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+}
+
+input[type=text] {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  align: center;
+  font-size: 17px;
+  background-color: grey;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.search-container {
+  float: right;
+}
+
+.search-container button{
+  float: right;
+  padding: 7.5px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+.post {
+  border: 1px solid black;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.post h2,.p1 {
+  margin-left: 15px;
+  width: 50%;
+  display: inline-block;
+}
+
+button {
+  float: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+
+
+
+ /*.nav_bar {
   float: left;
   list-style-type: none;
   margin: 0;
@@ -32,8 +187,8 @@ html {
 }
 
 .mainBlock {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
   color: white;
   font-weight: bold;
   border: 3px solid black;
@@ -46,8 +201,8 @@ html {
 }
 
 #top_part {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
   color: white;
   font-weight: bold;
   border: 3px solid black;
@@ -104,8 +259,8 @@ h1 {
   border-radius: 10px;
   color: white;
   padding-left: 30px;
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
   font-weight: bold;
   position: absolute;
   vertical-align: bottom;
@@ -123,3 +278,31 @@ h2 {
 p {
   width: 20%;
 }
+
+ul .nav_bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float:left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}*/

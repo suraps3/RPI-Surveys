@@ -1,4 +1,4 @@
-<head>
+<!-- <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style/forum.css">
 </head>
@@ -6,13 +6,21 @@
 <body>
 	<div id = "mainBlock">
 
+		<ul class="nav_bar">
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="forum.html">Forums</a></li>
+		  <li style = float:right"><a href="profile.html">Profile</a></li>
+		<ul>
+
+		<h1>Forums</h1>
+
 		<div id="top_part">
 			<h1 id="forum_title" style="color: white;">Forums</h1>
 			<div class="search-container">
 				<input type="text" placeholder="Search">
 				<button type="submit"><i class="fa fa-search"></i></button>
 			</div>
-		</div>
+	  </div>
 
 		<li>
 			<ul class="post">
@@ -26,13 +34,78 @@
 				<p>More info: he's a criminal</p>
 			</ul>
 		</li>
-	</div>
 
-	<ul class="nav_bar">
-	  <li class="nav_item"><a href="index.html">Home</a></li>
-	  <li class="nav_item"><a href="forum.html">Forums</a></li>
-	  <li class="nav_item"><a href="profile.html">Profile</a></li>
-	<ul>
+
+	</div> -->
+
+
+	<!-- working url:  https://afsws.rpi.edu/AFS/home/68/suraps3/public_html/iit/index.html -->
+	<!DOCTYPE html>
+
+	<html lang="en">
+
+
+	  <head>
+	    <!-- set the title  -->
+	    <title>Forum</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	    <link rel="stylesheet" href="style/forum.css"/>
+	  </head>
+
+	  <!-- start of body -->
+	  <body>
+	    <a href="https://afsws.rpi.edu/AFS/home/68/suraps3/public_html/iit/index.html">Website</a>
+	    <div id="bodyBlock">
+
+	      <!-- set the header -->
+	      <h1>Forum</h1>
+
+	      <!-- added a menu which includes a home button, a dropdown button of all projects, and a special projects button for out term proj -->
+	      <ul>
+	        <li><a href="index.html">Home</a></li>
+	        <li><a href="forum.html" class="projbtn">Forums</a></li>
+					<li><a href="profile.html">Profile</a></li>
+	        <li><a href="specialproject.html">Feedback</a></li>
+					<div id="searchhpart">
+						<div class="search-container">
+							<input type="text" placeholder="Search">
+							<button type="submit"><i class="fa fa-search"></i></button>
+						</div>
+				  </div>
+	      </ul>
+				<p></p>
+				<p></p>
+				<div class="post">
+					<h2>Enhanced shuttle routes please!</h2>
+					<button>Vote</button>
+		      <p class = "p1">The east shuttles take too long to come to my house :(</p>
+
+		    </div>
+
+
+				<div id="input">
+					<div class="input-container">
+						<input type="text" placeholder="Enter your comments here...">
+						<button type="submit"><i class="fa fa-input"></i></button>
+					</div>
+				</div>
+
+
+
+
+	    <!-- used my goals and expectations essay to be the main text on the home page -->
+
+
+
+
+	    <!-- set the footer -->
+
+	  </body>
+
+	<!-- end of index page -->
+	</html>
+
 
 		<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
@@ -57,4 +130,3 @@
 	  firebase.initializeApp(firebaseConfig);
 	  firebase.analytics();
 	</script>
-</body>
