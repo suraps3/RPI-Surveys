@@ -1,23 +1,21 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Setup your own css classes for all html elements and customize the markup, jQuery Survey Library Example</title>
 
-{% block title %}Organizations{% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/jquery"></script>
+        <script src="https://surveyjs.azureedge.net/1.1.18/survey.jquery.js"></script>
+        <link href="https://surveyjs.azureedge.net/1.1.18/survey.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="survey.css">
 
-{% block stylesheet %}<link rel="stylesheet" href="style/organizations.css">{% endblock %}
 
-{% block body %}
-<div id = "mainBlock">
-<h1>Organizations Page</h1>
+    </head>
+    <body>
+        <div id="surveyElement"></div>
+        <div id="surveyResult"></div>
 
-<div class="organization">
-  <h2>RPI Ambulance</h2>
-  <p>President</p>
-  <p>Provides emergency medical services to the Rensselaer community, and provides educational programs in the field of emergency medicine for members of the organization and the Rensselaer community.</p>
-</div>
-<div class="organization">
-  <h2>Global Medical Brigades</h2>
-  <p>President</p>
-  <p>Travels abroad to provide relief to an underserved community in Panama, Honduras, Nicaragua, or Ghana. Depending on the interest, we can choose to focus on medical, dental, public health, environmental, or water brigades.</p>
-</div>
-</div>
+        <script type="text/javascript" src="survey.js"></script>
 
-{% endblock %}
+    </body>
+</html>
