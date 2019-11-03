@@ -1,22 +1,22 @@
-{% extends "base.html" %}
+<link rel="stylesheet" href="style/leaderboard.css">
 
-{% block title %}Leaderboard{% endblock %}
+<body>
+	<div id = "mainBlock">
 
-{% block stylesheet %}<link rel="stylesheet" href="style/leaderboard.css">{% endblock %}
+		<div id="top_part">
+			<h1 id="forum" style="color: black;">Forum</h1>
+			<input type="text" placeholder="Search">
+		</div>
 
-{% block body %}
-<div id = "mainBlock">
-<h1>Leaderboard Page</h1>
-
-<div class="user">
-  <h2>Mike Wazowski</h2>
-  <p>Hours Volunteered: 25</p>
-  <p>More info: he's green</p>
-</div>
-<div class="user">
-  <h2>Flynn Rider</h2>
-  <p>Hours Volunteered: 0</p>
-  <p>More info: he's a criminal</p>
-</div>
-</div>
-{% endblock %}
+		<div class="user">
+			<h2>Mike Wazowski</h2>
+			<p>Hours Volunteered: 25</p>
+			<p>More info: he's green</p>
+		</div>
+		<div class="user">
+			<h2>Flynn Rider</h2>
+			<p>Hours Volunteered: 0</p>
+			<p>More info: he's a criminal</p>
+		</div>
+	</div>
+</body>
