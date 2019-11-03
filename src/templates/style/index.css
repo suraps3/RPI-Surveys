@@ -14,7 +14,8 @@ html {
   background-size: cover;
 }
 
-ul{
+.nav_bar {
+  float: left;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -25,18 +26,18 @@ ul{
   width: 100%;
 }
 
-li a {
+.nav_item a {
   float: left;
   margin-left: 0;
   display: block;
   color:white;
   text-align: center;
   text-decoration: none;
-  padding: 14px 172px;
+  padding: 14px 12%;
   font-size: 35px;
 }
 
-li a:hover {
+.nav_item a:hover {
   background-color: black;
 }
 

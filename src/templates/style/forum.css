@@ -1,20 +1,63 @@
 html {
   font-family: 'Roboto Condensed', sans-serif;
-  color: red;
-  /*background-image: url("cool-background.png")*/
+  background-image: url("4.jpg");
+  background-size: cover;
 }
 
-#mainBlock {
-  float: center;
-  align: center;
-  padding: 30px;
-  color: black;
-  /* background-color: rgb(255,192,203); */
+.nav_bar {
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav_item a {
+  float: left;
+  margin-left: 0;
+  display: block;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 12%;
+  font-size: 35px;
+}
+
+.nav_item a:hover {
+  background-color: black;
+}
+
+.mainBlock {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid black;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
 }
 
 #top_part {
-  overflow: hidden;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
   border: 3px solid black;
+  position: absolute;
+  vertical-align: middle;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
 }
 
 #forum_title {
@@ -58,9 +101,19 @@ h1 {
 
 .post {
   border: 3px solid black;
-  display:flex;
   border-radius: 10px;
+  color: white;
   padding-left: 30px;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  font-weight: bold;
+  position: absolute;
+  vertical-align: bottom;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
 }
 
 h2 {
