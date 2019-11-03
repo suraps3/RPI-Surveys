@@ -17,7 +17,7 @@ html {
   border: 3px solid black;
 }
 
-#forum {
+#forum_title {
   float:left;
 }
 
@@ -56,7 +56,7 @@ h1 {
   background: #ccc;
 }
 
-.user {
+.post {
   border: 3px solid black;
   display:flex;
   border-radius: 10px;
