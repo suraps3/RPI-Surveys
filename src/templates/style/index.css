@@ -1,44 +1,100 @@
 html {
   font-family: 'Roboto Condensed', sans-serif;
-  background-image: url("4.jpg");
+  background-image: url("back4.jpg");
   background-size: cover;
 }
 
 .bg-image{
-  background-image: url("4.jpg");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  /*background-image: url("back4.jpg");*/
+/*  filter: blur(8px);
+  -webkit-filter: blur(8px);*/
   height: 95%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.nav_bar {
-  float: left;
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
-.nav_item a {
+li {
   float: left;
-  margin-left: 0;
-  display: block;
-  color:white;
-  text-align: center;
-  text-decoration: none;
-  padding: 14px 12%;
-  font-size: 35px;
 }
 
-.nav_item a:hover {
-  background-color: black;
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+
+h1 {
+  font-size: 35px;
+  color: black;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #FFCCCB;
+}
+
+#searchpart {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 3px solid black;
+  position: absolute;
+  vertical-align: middle;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+}
+
+input[type=text] {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  align: center;
+  font-size: 17px;
+  background-color: grey;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.search-container {
+  float: right;
+}
+
+.search-container button{
+  float: right;
+  padding: 7.5px 10px;
+  margin-top: 23px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
 }
 
 .mainBlock {
@@ -50,7 +106,7 @@ html {
   position: absolute;
   top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   z-index: 2;
   width: 80%;
   padding: 20px;
@@ -59,23 +115,6 @@ html {
   color: white;
   background-color: red;
   font-size: 50px;
-}
-
-
-h1 {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
 }
 
 h2 {
@@ -87,7 +126,7 @@ h2 {
   position: absolute;
   top: 62.5%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -75%);
   z-index: 2;
   width: 80%;
   padding: 20px;
